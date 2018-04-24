@@ -3,5 +3,10 @@
         "env",
         "react",
         "flow"
-    ]
+	],
+	"env": {
+		"test": {
+		  "presets": [["env"], "react"]
+		}
+	  }
 }
