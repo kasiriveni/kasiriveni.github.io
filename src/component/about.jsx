@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { PROFILE } from '../component/constant';
 
-function About() {
+const About = () => {
     return (
         <Fragment>
             <section id="about" className="section about-section">
@@ -18,6 +18,6 @@ function About() {
             </section>
         </Fragment>
     );
-}
+};
 
 export default About;

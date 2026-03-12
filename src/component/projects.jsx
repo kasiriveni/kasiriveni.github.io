@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { PROJECTS } from '../component/constant';
 
-function Projects() {
+const Projects = () => {
     return (
         <Fragment>
             <section id="projects" className="section projects-section">
@@ -36,6 +36,6 @@ function Projects() {
             </section>
         </Fragment>
     );
-}
+};
 
 export default Projects;

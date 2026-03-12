@@ -1,25 +1,25 @@
 {
-  "name": "kasiriveni.github.io",
-  "version": "0.0.1",
-  "description": "personal project ",
-  "main": "./src/js/index.js",
-  "repository": "https://github.com/kasiriveni/kasiriveni.github.io.git",
-  "author": "Srinivas Kasiriveni <kasiriveni@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "jest --watch"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.4",
-    "babel-jest": "^22.4.3",
-    "vite": "^7.3.1"
-  }
+	"name": "kasiriveni.github.io",
+	"version": "0.0.1",
+	"description": "srinivas kasiriven personal project ",
+	"main": "./src/js/index.js",
+	"repository": "https://github.com/kasiriveni/kasiriveni.github.io.git",
+	"author": "Srinivas Kasiriveni <kasiriveni@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "jest --watch"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^5.1.4",
+		"babel-jest": "^22.4.3",
+		"vite": "^7.3.1"
+	}
 }

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { SKILLS } from '../component/constant';
 
-function Skills() {
+const Skills = () => {
     return (
         <Fragment>
             <section id="skills" className="section skills-section">
@@ -23,6 +23,6 @@ function Skills() {
             </section>
         </Fragment>
     );
-}
+};
 
 export default Skills;
