@@ -10,6 +10,7 @@
 		"start": "vite",
 		"dev": "vite",
 		"build": "vite build",
+		"deploy": "gh-pages -d docs",
 		"preview": "vite preview",
 		"test": "jest --watch"
 	},
@@ -20,6 +21,7 @@
 	"devDependencies": {
 		"@vitejs/plugin-react": "^5.1.4",
 		"babel-jest": "^22.4.3",
+		"gh-pages": "^6.3.0",
 		"vite": "^7.3.1"
 	}
 }
