@@ -3,7 +3,6 @@ import { PROFILE } from "../component/constant";
 
 const Hero = () => {
 	return (
-		<Fragment>
 			<section id="hero" className="section hero-section">
 				<div className="container hero-inner">
 					<div>
@@ -21,7 +20,6 @@ const Hero = () => {
 					</div>
 				</div>
 			</section>
-		</Fragment>
 	);
 };
 

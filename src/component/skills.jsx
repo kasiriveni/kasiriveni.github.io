@@ -3,7 +3,6 @@ import { SKILLS } from '../component/constant';
 
 const Skills = () => {
     return (
-        <Fragment>
             <section id="skills" className="section skills-section">
                 <div className="container">
                     <h2 className="section-title">Skills</h2>
@@ -21,7 +20,6 @@ const Skills = () => {
                     </div>
                 </div>
             </section>
-        </Fragment>
     );
 };
 

@@ -3,7 +3,6 @@ import { PROFILE } from "../component/constant";
 
 const Contact = () => {
 	return (
-		<Fragment>
 			<section id="contact" className="section contact-section">
 				<div className="container">
 					<h2 className="section-title">Contact</h2>
@@ -42,7 +41,6 @@ const Contact = () => {
 					</ul>
 				</div>
 			</section>
-		</Fragment>
 	);
 };
 

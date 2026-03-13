@@ -3,7 +3,6 @@ import { PROJECTS } from '../component/constant';
 
 const Projects = () => {
     return (
-        <Fragment>
             <section id="projects" className="section projects-section">
                 <div className="container">
                     <h2 className="section-title">Projects</h2>
@@ -34,7 +33,6 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-        </Fragment>
     );
 };
 

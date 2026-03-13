@@ -3,7 +3,6 @@ import { PROFILE } from '../component/constant';
 
 const About = () => {
     return (
-        <Fragment>
             <section id="about" className="section about-section">
                 <div className="container">
                     <h2 className="section-title">About</h2>
@@ -16,7 +15,6 @@ const About = () => {
                     </p>
                 </div>
             </section>
-        </Fragment>
     );
 };
 

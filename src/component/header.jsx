@@ -12,7 +12,6 @@ const Header = ({ name }) => {
     };
 
     return (
-        <Fragment>
             <header className="site-header">
                 <div className="container header-content">
                     <div className="logo">{name}</div>
@@ -32,7 +31,6 @@ const Header = ({ name }) => {
                     </nav>
                 </div>
             </header>
-        </Fragment>
     );
 };
 

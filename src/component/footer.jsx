@@ -5,7 +5,6 @@ const Footer = ({ name }) => {
 	const year = new Date().getFullYear();
 
 	return (
-		<Fragment>
 			<footer className="site-footer">
 				<div className="container footer-inner">
 					<p className="footer-copy">
@@ -73,7 +72,6 @@ const Footer = ({ name }) => {
 					</div>
 				</div>
 			</footer>
-		</Fragment>
 	);
 };
 
