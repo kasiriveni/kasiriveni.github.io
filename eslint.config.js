@@ -6,7 +6,7 @@ const eslintConfigPrettier = require('eslint-config-prettier');
 
 module.exports = [
 	{
-		ignores: ['dist/**', 'node_modules/**', 'package-lock.json'],
+		ignores: ['bundle.js', 'dist/**', 'node_modules/**', 'package-lock.json'],
 	},
 	{
 		files: ['**/*.js'],
