@@ -12,7 +12,7 @@ const Skills = () => {
 							<ul className="skill-list">
 								{group.items.map((skill) => (
 									<li key={skill} className="skill-item">
-										{skill}
+										<span className="skill-icon">{skill}</span>
 									</li>
 								))}
 							</ul>
