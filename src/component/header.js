@@ -61,7 +61,7 @@ const MenuIcon = ({ isOpen }) => (
 	</svg>
 );
 
-const Header = ({ name, theme, onThemeToggle }) => {
+const Header = ({ theme, onThemeToggle }) => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	const headerRef = useRef(null);
 	const nextTheme = theme === 'dark' ? 'light' : 'dark';

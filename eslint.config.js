@@ -6,7 +6,15 @@ const eslintConfigPrettier = require('eslint-config-prettier');
 
 module.exports = [
 	{
-		ignores: ['bundle.js', 'dist/**', 'node_modules/**', 'package-lock.json', '*.bundle.js'],
+		ignores: [
+			'bundle.js',
+			'dist/**',
+			'node_modules/**',
+			'package-lock.json',
+			'*.bundle.js',
+			'eslint.config.js',
+			'webpack.config.js',
+		],
 	},
 	{
 		files: ['**/*.js'],
