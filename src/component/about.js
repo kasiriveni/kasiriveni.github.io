@@ -11,7 +11,15 @@ const About = () => {
 				<div className="about-card">
 					<div className="about-visual">
 						<div className="portrait-frame portrait-frame-secondary">
-							<img src={PROFILE.avatar} alt={PROFILE.name} className="portrait-image" />
+							<img
+								src={PROFILE.avatar}
+								alt={`${PROFILE.name} portrait`}
+								className="portrait-image"
+								width="320"
+								height="400"
+								loading="lazy"
+								decoding="async"
+							/>
 						</div>
 					</div>
 					<div className="about-content">

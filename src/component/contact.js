@@ -9,9 +9,9 @@ const Contact = () => {
 					<span className="section-kicker">Testimonials</span>
 					<h2 className="section-title">What people say about working with me.</h2>
 				</div>
-				<div className="testimonials-stack">
+				<div className="testimonials-stack" aria-label="Client testimonials" role="list">
 					{TESTIMONIALS.map((item) => (
-						<article key={item.name} className="testimonial-card">
+						<article key={item.name} className="testimonial-card" role="listitem">
 							<div className="testimonial-avatar" aria-hidden="true">
 								{item.name.charAt(0)}
 							</div>

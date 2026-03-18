@@ -42,8 +42,11 @@ const App = () => {
 
 	return (
 		<>
+			<a href="#main-content" className="skip-link">
+				Skip to main content
+			</a>
 			<Header name={PROFILE.shortName} theme={theme} onThemeToggle={toggleTheme} />
-			<main>
+			<main id="main-content" tabIndex="-1">
 				<Hero />
 				<About />
 				<Skills />

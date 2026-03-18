@@ -7,7 +7,14 @@ const Hero = () => {
 			<div className="container hero-inner">
 				<div className="hero-portrait-card">
 					<div className="portrait-frame portrait-frame-hero">
-						<img src={PROFILE.avatar} alt={PROFILE.name} className="portrait-image" />
+						<img
+							src={PROFILE.avatar}
+							alt={`${PROFILE.name} headshot`}
+							className="portrait-image"
+							width="320"
+							height="320"
+							decoding="async"
+						/>
 					</div>
 				</div>
 				<div className="hero-copy-card">
