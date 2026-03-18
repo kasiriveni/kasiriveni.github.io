@@ -52,42 +52,74 @@ export const SKILLS = [
 	},
 	{
 		category: 'Frontend Frameworks',
-		items: ['React', 'Vue', 'Angular'],
+		items: ['React', 'Redux'],
+	},
+	{
+		category: 'Backend & APIs',
+		items: ['Node.js', 'Express', 'REST APIs', 'GraphQL'],
+	},
+	{
+		category: 'Mobile & Cross-platform',
+		items: ['React Native', 'Expo'],
+	},
+	{
+		category: 'Cloud & DevOps',
+		items: ['AWS', 'Vercel', 'Netlify', 'Docker'],
+	},
+	{
+		category: 'Databases',
+		items: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB'],
 	},
 	{
 		category: 'Tools & Platforms',
-		items: ['Webpack', 'Babel', 'Git'],
+		items: ['Webpack', 'Babel', 'Git', 'Jest', 'ESLint'],
 	},
 ];
 
 export const EXPERIENCE = [
 	{
-		company: 'Upwork',
-		period: '2023 - Present',
-		role: 'Frontend Developer',
+		company: 'Evernorth Health Services',
+		period: '2024 - Present',
+		role: 'Software Engineering Advisor',
 		points: [
-			'Built responsive React interfaces for client-facing products and landing pages.',
+			'Built responsive React interfaces for client facing products and mobile apps.',
 			'Improved page structure and UI consistency with reusable components and shared styles.',
-			'Delivered small-to-mid scope features with strong attention to layout quality on mobile.',
 		],
 	},
 	{
-		company: 'Freelance',
-		period: '2021 - 2023',
-		role: 'Web Developer',
+		company: 'Cognizant',
+		period: '2022 -  2024',
+		role: 'Sr. Associate',
 		points: [
 			'Created portfolio, business, and dashboard interfaces with JavaScript and React.',
 			'Integrated APIs, handled UI states, and improved maintainability of existing codebases.',
+		],
+	},
+	{
+		company: 'Innominds',
+		period: '2018 - 2022',
+		role: 'Senior Software Engineer',
+		points: [
+			'Developed hands-on projects covering responsive CSS, component composition, and tooling.',
+			'Focused on translating designs into structured, scalable frontend implementations.',
+		],
+	},
+	{
+		company: 'Publicis Sapient',
+		period: '2016 -  2018',
+		role: 'Interactive Developer',
+		points: [
+			'React and JavaScript development for client projects in the retail and CPG space.',
 			'Worked directly from visual references to deliver polished, production-ready layouts.',
 		],
 	},
 	{
-		company: 'Self Directed Learning',
-		period: '2019 - 2021',
-		role: 'Frontend Foundations',
+		company: 'Accion Labs',
+		period: '2014 -  2016',
+		role: 'Staff Consultant',
 		points: [
-			'Developed hands-on projects covering responsive CSS, component composition, and tooling.',
-			'Focused on translating designs into structured, scalable frontend implementations.',
+			'Built responsive websites and web apps with JavaScript, HTML, CSS, and backend APIs.',
+			'Worked on a variety of projects including marketing sites, internal tools, and client portals.',
 		],
 	},
 ];
@@ -95,54 +127,31 @@ export const EXPERIENCE = [
 export const PROJECTS = [
 	{
 		id: 1,
-		name: 'Wiz',
+		name: 'Portfolio Website',
 		description:
-			'A modern marketing site with editorial-style sections, strong hierarchy, and reusable CTA blocks.',
+			'	A personal portfolio website built with React, showcasing my skills, experience, and projects with a focus on clean design and responsive performance.',
 		tech: ['React', 'CSS', 'Responsive UI'],
 		github: 'https://github.com/kasiriveni/kasiriveni.github.io',
 		demo: 'https://kasiriveni.github.io/',
 		theme: 'ocean',
-	},
-	{
-		id: 2,
-		name: 'Folio',
-		description:
-			'A portfolio concept focused on clean typography, soft gradients, and modular project storytelling.',
-		tech: ['React', 'Webpack', 'Design System'],
-		github: 'https://github.com/kasiriveni/kasiriveni.github.io',
-		demo: 'https://kasiriveni.github.io/',
-		theme: 'violet',
-	},
-	{
-		id: 3,
-		name: 'Sparkspace',
-		description:
-			'A product landing page with feature callouts, testimonial support, and conversion-focused sections.',
-		tech: ['JavaScript', 'UI Design', 'Performance'],
-		github: 'https://github.com/kasiriveni/kasiriveni.github.io',
-		demo: 'https://kasiriveni.github.io/',
-		theme: 'sand',
 	},
 ];
 
 export const TESTIMONIALS = [
 	{
 		name: 'Client Feedback',
-		role: 'Startup Founder',
 		quote:
 			'Srinivas translated our rough references into a clean, responsive UI faster than expected and with very little iteration overhead.',
 	},
 	{
 		name: 'Product Team',
-		role: 'Design Collaboration',
 		quote:
 			'Layouts came back close to the design intent, especially on mobile, and the code structure was easy to extend.',
 	},
 	{
-		name: 'Freelance Partner',
-		role: 'Agency Delivery',
+		name: 'Peer Developer',
 		quote:
-			'Reliable implementation quality, clear communication, and strong attention to spacing, typography, and UI consistency.',
+			'Srinivas has a strong eye for detail and a pragmatic approach to building interfaces that feel polished and work well on real devices.',
 	},
 ];
 

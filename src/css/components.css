@@ -113,6 +113,20 @@
 		border-color 0.2s ease;
 }
 
+.theme-toggle {
+	border: none;
+	background: transparent;
+	border-radius: 999px;
+	width: 2rem;
+	height: 2rem;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+	background: var(--pill-bg);
+	border-color: transparent;
+}
+
 .theme-toggle:hover,
 .theme-toggle:focus-visible,
 .nav-toggle:hover,

@@ -175,8 +175,9 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: grid;
-	gap: 0.35rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem 1.25rem;
 	color: var(--soft-text);
 	font-size: 0.95rem;
 }
@@ -425,10 +426,9 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-
-.skill-item + .skill-item {
-	margin-top: 0.55rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
 }
 
 .skill-pill {
@@ -515,12 +515,28 @@
 
 .experience-points {
 	margin: 0;
-	padding-left: 1rem;
+	padding: 0;
+	list-style: none;
 	color: var(--muted);
 }
 
 .experience-points li + li {
 	margin-top: 0.45rem;
+}
+
+.experience-points li {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.experience-points li::before {
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 999px;
+	background: linear-gradient(135deg, var(--accent), var(--accent-2));
+	box-shadow: 0 0 0 0.3rem rgba(99, 213, 255, 0.08);
 }
 
 .project-card {

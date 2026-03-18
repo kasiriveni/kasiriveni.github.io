@@ -17,7 +17,6 @@ const Contact = () => {
 							</div>
 							<p className="testimonial-quote">“{item.quote}”</p>
 							<strong className="testimonial-name">{item.name}</strong>
-							<span className="testimonial-role">{item.role}</span>
 						</li>
 					))}
 				</ul>
