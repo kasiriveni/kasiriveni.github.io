@@ -12,7 +12,7 @@ module.exports = [
 			'node_modules/**',
 			'package-lock.json',
 			'*.bundle.js',
-			'eslint.config.js',
+			'.eslint.config.js',
 			'webpack.config.js',
 		],
 	},
