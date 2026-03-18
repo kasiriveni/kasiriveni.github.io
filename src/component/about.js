@@ -1,12 +1,12 @@
-import { ABOUT, PROFILE } from './constant';
+import { ABOUT, PROFILE, SECTION } from './constant';
 
 const About = () => {
 	return (
 		<section id="about" className="section about-section">
 			<div className="container">
 				<div className="section-heading-wrap">
-					<span className="section-kicker">About</span>
-					<h2 className="section-title">Curious about me? Here you go:</h2>
+					<span className="section-kicker">{SECTION.ABOUT.kicker}</span>
+					<h2 className="section-title">{SECTION.ABOUT.title}</h2>
 				</div>
 				<div className="about-card">
 					<div className="about-visual">

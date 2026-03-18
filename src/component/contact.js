@@ -1,33 +1,33 @@
-import { PROFILE, TESTIMONIALS } from '../component/constant';
+import { PROFILE, SECTION, TESTIMONIALS } from '../component/constant';
 import SocialIcon from './social-icon';
 
 const Contact = () => {
 	return (
 		<section id="contact" className="section contact-section">
 			<div className="container">
-				<div className="section-heading-wrap section-heading-centered">
-					<span className="section-kicker">Testimonials</span>
-					<h2 className="section-title">What people say about working with me.</h2>
+				<div className="section-heading-wrap">
+					<span className="section-kicker">{SECTION.TESTIMONIALS.kicker}</span>
+					<h2 className="section-title">{SECTION.TESTIMONIALS.title}</h2>
 				</div>
-				<div className="testimonials-stack" aria-label="Client testimonials" role="list">
+				<ul className="testimonials-stack" aria-label={SECTION.TESTIMONIALS.listLabel}>
 					{TESTIMONIALS.map((item) => (
-						<article key={item.name} className="testimonial-card" role="listitem">
+						<li key={item.name} className="testimonial-card">
 							<div className="testimonial-avatar" aria-hidden="true">
 								{item.name.charAt(0)}
 							</div>
 							<p className="testimonial-quote">“{item.quote}”</p>
 							<strong className="testimonial-name">{item.name}</strong>
 							<span className="testimonial-role">{item.role}</span>
-						</article>
+						</li>
 					))}
-				</div>
+				</ul>
+
 				<div className="contact-panel">
-					<span className="section-kicker">Get In Touch</span>
-					<h2 className="section-title">Let’s build something clean and useful.</h2>
-					<p className="section-text">
-						I’m currently available for portfolio builds, frontend feature work, and UI refreshes.
-					</p>
-					<ul className="contact-list" aria-label="Contact options">
+					<div className="section-heading-wrap">
+						<span className="section-kicker">{SECTION.CONTACT.kicker}</span>
+					</div>
+					<p className="section-text">{SECTION.CONTACT.body}</p>
+					<ul className="contact-list" aria-label={SECTION.CONTACT.contactListLabel}>
 						<li>
 							<a href={`mailto:${PROFILE.email}`} className="contact-link">
 								<SocialIcon icon="email" className="contact-icon" /> {PROFILE.email}
@@ -40,7 +40,7 @@ const Contact = () => {
 								rel="noopener noreferrer"
 								className="contact-link"
 							>
-								<SocialIcon icon="github" className="contact-icon" /> GitHub
+								<SocialIcon icon="github" className="contact-icon" /> {SECTION.CONTACT.githubLabel}
 							</a>
 						</li>
 						<li>
@@ -50,16 +50,17 @@ const Contact = () => {
 								rel="noopener noreferrer"
 								className="contact-link"
 							>
-								<SocialIcon icon="linkedin" className="contact-icon" /> LinkedIn
+								<SocialIcon icon="linkedin" className="contact-icon" />{' '}
+								{SECTION.CONTACT.linkedinLabel}
 							</a>
 						</li>
 					</ul>
 					<div className="hero-actions contact-actions">
 						<a href={`mailto:${PROFILE.email}`} className="btn primary-btn">
-							Email Me
+							{SECTION.CONTACT.emailCta}
 						</a>
 						<a href={PROFILE.contactLink} className="btn secondary-btn">
-							Quick Intro
+							{SECTION.CONTACT.secondaryCta}
 						</a>
 					</div>
 				</div>

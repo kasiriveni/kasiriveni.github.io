@@ -1,16 +1,15 @@
 export const PROFILE = {
 	name: 'Srinivas Kasiriveni',
 	shortName: 'Srinivas',
-	role: 'Frontend Developer',
+	initials: 'SK',
+	role: 'Fullstack Developer',
 	location: 'India',
 	summary:
-		'I build responsive interfaces with React, clean component architecture, and a strong bias toward polished user experience.',
-	introduction:
-		'I design and ship product-facing web experiences that balance speed, clarity, and maintainable code.',
+		'I work as a fullstack developer, combining modern frontend interfaces, pragmatic backend APIs, and mobile-friendly experiences with clean architecture and a strong focus on polished user experience.',
 	email: 'srinivas.kasiriveni@gmail.com',
 	github: 'https://github.com/kasiriveni',
 	linkedin: 'https://www.linkedin.com/in/kasiriveni',
-	availability: 'Open to frontend and full-stack opportunities',
+	availability: 'Open to fullstack opportunities',
 	avatar: 'https://avatars.githubusercontent.com/u/10164017?v=4',
 	contactLink: 'mailto:srinivas.kasiriveni@gmail.com?subject=Portfolio%20Inquiry',
 };
@@ -39,8 +38,8 @@ export const ABOUT = {
 		'My work is strongest where design detail and engineering discipline overlap: reusable components, clear UX hierarchy, and production-ready frontend code.',
 	],
 	highlights: [
-		{ label: 'Experience', value: '3+ Years' },
-		{ label: 'Primary Stack', value: 'React + JS' },
+		{ label: 'Experience', value: '12+ Years' },
+		{ label: 'Primary Stack', value: 'JavaScript' },
 		{ label: 'Focus', value: 'UI Engineering' },
 		{ label: 'Location', value: PROFILE.location },
 	],
@@ -147,4 +146,72 @@ export const TESTIMONIALS = [
 	},
 ];
 
-export const GITHUB_URL = 'https://api.github.com/users/kasiriveni';
+export const NAV_ITEMS = [
+	{ href: '#about', label: 'About' },
+	{ href: '#skills', label: 'Skills' },
+	{ href: '#experience', label: 'Experience' },
+	{ href: '#projects', label: 'Work' },
+	{ href: '#contact', label: 'Contact' },
+	{
+		href: PROFILE.linkedin,
+		label: 'Download CV',
+		target: '_blank',
+	},
+];
+
+export const SECTION = {
+	HERO: {
+		titlePrefix: "Hi, I'm",
+		primaryCtaLabel: 'View Work',
+		secondaryCtaLabel: "Let's Talk",
+	},
+	ABOUT: {
+		kicker: 'About',
+		title: 'A closer look at who I am',
+	},
+	SKILLS: {
+		kicker: 'Skills',
+		title: 'Tools and technologies I enjoy working with',
+	},
+	EXPERIENCE: {
+		kicker: 'Experience',
+		title: 'Experience that shapes how I build products',
+	},
+	PROJECTS: {
+		kicker: 'Projects',
+		title: 'Selected projects and product concepts',
+		githubLabel: 'GitHub',
+		demoLabel: 'Live Demo',
+	},
+	TESTIMONIALS: {
+		kicker: 'Testimonials',
+		title: 'What collaborators say about working with me',
+		listLabel: 'Client testimonials',
+	},
+	CONTACT: {
+		kicker: 'Get In Touch',
+		body: 'I’m currently available for portfolio builds, frontend feature work, and UI refreshes.',
+		contactListLabel: 'Contact options',
+		emailCta: 'Email Me',
+		secondaryCta: 'Quick Intro',
+		githubLabel: 'GitHub',
+		linkedinLabel: 'LinkedIn',
+	},
+	FOOTER: {
+		tagline: 'JavaScript Enthusiast 🥰',
+	},
+	LOADING: {
+		title: 'Loading portfolio',
+		caption: 'Bringing everything into focus…',
+	},
+	A11Y: {
+		skipToMain: 'Skip to main content',
+		scrollToTop: 'Scroll to top',
+		themeToggleLabel: {
+			light: 'Switch to light theme',
+			dark: 'Switch to dark theme',
+		},
+		menuOpen: 'Open menu',
+		menuClose: 'Close menu',
+	},
+};

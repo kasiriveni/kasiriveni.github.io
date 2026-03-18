@@ -1,10 +1,13 @@
-import { PROJECTS } from '../component/constant';
+import { PROJECTS, SECTION } from '../component/constant';
 
 const Projects = () => {
 	return (
 		<section id="projects" className="section projects-section">
 			<div className="container">
-				<h2 className="section-title">Projects</h2>
+				<div className="section-heading-wrap">
+					<span className="section-kicker">{SECTION.PROJECTS.kicker}</span>
+					<h2 className="section-title">{SECTION.PROJECTS.title}</h2>
+				</div>
 				<div className="projects-grid">
 					{PROJECTS.map((project) => (
 						<article key={project.id} className="project-card">
@@ -29,12 +32,12 @@ const Projects = () => {
 								<div className="project-links">
 									{project.github && (
 										<a href={project.github} target="_blank" rel="noopener noreferrer">
-											GitHub
+											{SECTION.PROJECTS.githubLabel}
 										</a>
 									)}
 									{project.demo && (
 										<a href={project.demo} target="_blank" rel="noopener noreferrer">
-											Live Demo
+											{SECTION.PROJECTS.demoLabel}
 										</a>
 									)}
 								</div>

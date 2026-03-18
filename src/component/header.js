@@ -1,19 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { PROFILE } from './constant';
-
-const NAV_ITEMS = [
-	{ href: '#about', label: 'About' },
-	{ href: '#skills', label: 'Skills' },
-	{ href: '#experience', label: 'Experience' },
-	{ href: '#projects', label: 'Work' },
-	{ href: '#contact', label: 'Contact' },
-	{
-		href: 'https://www.linkedin.com/in/kasiriveni',
-		label: 'Download CV',
-		target: '_blank',
-	},
-];
+import { NAV_ITEMS, PROFILE, SECTION } from './constant';
 
 const ThemeIcon = ({ theme }) => {
 	if (theme === 'dark') {
@@ -65,6 +52,7 @@ const Header = ({ theme, onThemeToggle }) => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	const headerRef = useRef(null);
 	const nextTheme = theme === 'dark' ? 'light' : 'dark';
+	const themeToggleLabel = SECTION.A11Y.themeToggleLabel[nextTheme];
 
 	const toggleNav = () => {
 		setIsNavOpen((prev) => !prev);
@@ -104,7 +92,7 @@ const Header = ({ theme, onThemeToggle }) => {
 		<header className="site-header" ref={headerRef}>
 			<div className="container header-content">
 				<a href="#hero" className="brand-mark" onClick={handleLinkClick}>
-					<span className="brand-mark-badge">SK</span>
+					<span className="brand-mark-badge">{PROFILE.initials}</span>
 					<span className="brand-mark-text">{PROFILE.name}</span>
 				</a>
 				<nav id="site-nav" className={`nav ${isNavOpen ? 'is-open' : ''}`} aria-label="Primary">
@@ -125,8 +113,8 @@ const Header = ({ theme, onThemeToggle }) => {
 						type="button"
 						className="theme-toggle"
 						onClick={onThemeToggle}
-						aria-label={`Switch to ${nextTheme} theme`}
-						title={`Switch to ${nextTheme} theme`}
+						aria-label={themeToggleLabel}
+						title={themeToggleLabel}
 					>
 						<ThemeIcon theme={theme} />
 					</button>
@@ -135,8 +123,8 @@ const Header = ({ theme, onThemeToggle }) => {
 						className="nav-toggle"
 						aria-controls="site-nav"
 						aria-expanded={isNavOpen}
-						aria-label={isNavOpen ? 'Close menu' : 'Open menu'}
-						title={isNavOpen ? 'Close menu' : 'Open menu'}
+						aria-label={isNavOpen ? SECTION.A11Y.menuClose : SECTION.A11Y.menuOpen}
+						title={isNavOpen ? SECTION.A11Y.menuClose : SECTION.A11Y.menuOpen}
 						onClick={toggleNav}
 					>
 						<MenuIcon isOpen={isNavOpen} />

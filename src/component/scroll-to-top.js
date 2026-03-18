@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/style.css';
+import { SECTION } from './constant';
 
 const SCROLL_THRESHOLD = 300;
 
@@ -25,7 +26,7 @@ const ScrollToTop = () => {
 
 	return (
 		isVisible && (
-			<button id="scrollToTopBtn" onClick={scrollToTop} aria-label="Scroll to top">
+			<button id="scrollToTopBtn" onClick={scrollToTop} aria-label={SECTION.A11Y.scrollToTop}>
 				&#8679;
 			</button>
 		)

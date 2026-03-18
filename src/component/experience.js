@@ -1,16 +1,12 @@
-import { EXPERIENCE } from './constant';
+import { EXPERIENCE, SECTION } from './constant';
 
 const Experience = () => {
 	return (
 		<section id="experience" className="section experience-section">
 			<div className="container">
-				<div className="section-heading-wrap section-heading-centered">
-					<span className="section-kicker">Experience</span>
-					<h2 className="section-title">Roles that shaped how I build products.</h2>
-					<p className="section-caption">
-						Frontend-heavy work with an emphasis on responsive execution, client delivery, and
-						maintainable UI systems.
-					</p>
+				<div className="section-heading-wrap">
+					<span className="section-kicker">{SECTION.EXPERIENCE.kicker}</span>
+					<h2 className="section-title">{SECTION.EXPERIENCE.title}</h2>
 				</div>
 				<div className="experience-list">
 					{EXPERIENCE.map((item) => (

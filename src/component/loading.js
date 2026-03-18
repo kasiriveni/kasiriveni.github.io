@@ -1,4 +1,5 @@
 import React from 'react';
+import { SECTION } from './constant';
 
 const Loading = () => {
 	return (
@@ -9,8 +10,8 @@ const Loading = () => {
 					<div className="app-loading-ring app-loading-ring-1" />
 					<div className="app-loading-ring app-loading-ring-2" />
 				</div>
-				<p className="app-loading-title">Loading portfolio</p>
-				<p className="app-loading-caption">Bringing everything into focus&hellip;</p>
+				<p className="app-loading-title">{SECTION.LOADING.title}</p>
+				<p className="app-loading-caption">{SECTION.LOADING.caption}</p>
 			</div>
 		</div>
 	);

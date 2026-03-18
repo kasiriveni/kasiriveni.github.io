@@ -1,4 +1,4 @@
-import { SKILLS } from '../component/constant';
+import { SECTION, SKILLS } from '../component/constant';
 
 const SKILL_LOGOS = {
 	JavaScript:
@@ -18,7 +18,10 @@ const Skills = () => {
 	return (
 		<section id="skills" className="section skills-section">
 			<div className="container">
-				<h2 className="section-title">Skills</h2>
+				<div className="section-heading-wrap">
+					<span className="section-kicker">{SECTION.SKILLS.kicker}</span>
+					<h2 className="section-title">{SECTION.SKILLS.title}</h2>
+				</div>
 				<div className="skills-grid">
 					{SKILLS.map((group) => (
 						<div key={group.category} className="skill-group">

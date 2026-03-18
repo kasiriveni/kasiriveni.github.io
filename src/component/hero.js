@@ -1,5 +1,4 @@
-import { PROFILE, SOCIAL_LINKS } from '../component/constant';
-import SocialIcon from './social-icon';
+import { PROFILE, SECTION } from '../component/constant';
 
 const Hero = () => {
 	return (
@@ -19,38 +18,21 @@ const Hero = () => {
 				</div>
 				<div className="hero-copy-card">
 					<h1 className="hero-title">
-						Hi, I&apos;m {PROFILE.shortName} <span aria-hidden="true">👋</span>
+						{SECTION.HERO.titlePrefix} {PROFILE.shortName} <span aria-hidden="true">👋</span>
 					</h1>
 					<p className="hero-role">{PROFILE.role}</p>
-					<p className="hero-summary">{PROFILE.introduction}</p>
+					<p className="hero-summary">{PROFILE.summary}</p>
 					<ul className="hero-meta" aria-label="Profile highlights">
-						<li>{PROFILE.location}</li>
+						<li>{PROFILE.location} </li>
 						<li>{PROFILE.availability}</li>
 					</ul>
 					<div className="hero-actions">
 						<a href="#projects" className="btn primary-btn">
-							View Work
+							{SECTION.HERO.primaryCtaLabel}
 						</a>
 						<a href="#contact" className="btn secondary-btn">
-							Let&apos;s Talk
+							{SECTION.HERO.secondaryCtaLabel}
 						</a>
-					</div>
-					<div className="social-strip" aria-label="Social links">
-						{SOCIAL_LINKS.map((link) => (
-							<a
-								key={link.label}
-								href={link.href}
-								target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-								rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-								className="social-pill"
-								aria-label={link.label}
-							>
-								<span className="social-pill-icon">
-									<SocialIcon icon={link.icon} className="social-icon-svg" />
-								</span>
-								<span className="social-pill-label">{link.label}</span>
-							</a>
-						))}
 					</div>
 				</div>
 			</div>

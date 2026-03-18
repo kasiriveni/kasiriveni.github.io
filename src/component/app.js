@@ -9,7 +9,7 @@ import Experience from '../component/experience';
 import Projects from '../component/projects';
 import Contact from '../component/contact';
 import ScrollToTop from '../component/scroll-to-top';
-import { PROFILE } from '../component/constant';
+import { PROFILE, SECTION } from '../component/constant';
 
 const THEME_STORAGE_KEY = 'portfolio-theme';
 
@@ -43,7 +43,7 @@ const App = () => {
 	return (
 		<>
 			<a href="#main-content" className="skip-link">
-				Skip to main content
+				{SECTION.A11Y.skipToMain}
 			</a>
 			<Header name={PROFILE.shortName} theme={theme} onThemeToggle={toggleTheme} />
 			<main id="main-content" tabIndex="-1">
@@ -54,7 +54,7 @@ const App = () => {
 				<Projects />
 				<Contact />
 			</main>
-			<Footer name={PROFILE.name} />
+			<Footer />
 			<ScrollToTop />
 		</>
 	);

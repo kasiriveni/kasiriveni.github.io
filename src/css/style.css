@@ -34,12 +34,7 @@
 	margin-bottom: 2.25rem;
 }
 
-.section-heading-centered {
-	text-align: center;
-	max-width: 760px;
-	margin-inline: auto;
-	margin-bottom: 2.25rem;
-}
+
 
 .section-kicker,
 .eyebrow {
@@ -133,25 +128,6 @@
 	padding: 0.5rem;
 	border-radius: 1rem;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-
-.portrait-frame::before,
-.portrait-frame::after {
-	content: '';
-	position: absolute;
-	top: 0.8rem;
-	bottom: 0.8rem;
-	width: 0.28rem;
-	background: var(--frame-rail);
-	border-radius: 999px;
-}
-
-.portrait-frame::before {
-	left: 0.45rem;
-}
-
-.portrait-frame::after {
-	right: 0.45rem;
 }
 
 .portrait-frame-hero {
@@ -489,6 +465,7 @@
 	object-fit: contain;
 }
 
+
 .experience-list,
 .projects-grid,
 .projects-stack,
@@ -496,6 +473,8 @@
 	display: grid;
 	gap: 1.5rem;
 	margin-top: 1.75rem;
+	list-style: none;
+	padding: 0;
 }
 
 .projects-grid {
@@ -644,6 +623,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+	justify-content: center;
 }
 
 .project-tech {
@@ -764,14 +744,19 @@
 }
 
 .contact-panel {
-	padding: 1.35rem;
-	margin-top: 1.25rem;
+	padding: 1.6rem;
+	margin: 1.5rem auto 0;
 	text-align: center;
+	max-width: 44rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.9rem;
 }
 
 .contact-actions {
 	justify-content: center;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 }
 
 .site-footer {
@@ -787,6 +772,7 @@
 	border-top: 1px solid var(--footer-border);
 	color: var(--muted);
 	font-size: 0.85rem;
+	justify-content: center;
 }
 
 .footer-copy {
