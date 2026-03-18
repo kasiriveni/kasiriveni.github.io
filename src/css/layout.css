@@ -47,7 +47,11 @@ body::before {
 	position: fixed;
 	inset: 0;
 	pointer-events: none;
-	background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 0, transparent 1px);
+	background-image: radial-gradient(
+		circle at 1px 1px,
+		rgba(255, 255, 255, 0.06) 0,
+		transparent 1px
+	);
 	background-size: 6px 6px;
 	opacity: 0.16;
 	mix-blend-mode: soft-light;

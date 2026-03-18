@@ -156,7 +156,13 @@
 	position: absolute;
 	inset: -40%;
 	background:
-		conic-gradient(from 160deg, rgba(99, 213, 255, 0.28), transparent 35%, rgba(158, 255, 180, 0.24), transparent 68%),
+		conic-gradient(
+			from 160deg,
+			rgba(99, 213, 255, 0.28),
+			transparent 35%,
+			rgba(158, 255, 180, 0.24),
+			transparent 68%
+		),
 		radial-gradient(circle at top, rgba(99, 213, 255, 0.16), transparent 55%);
 	opacity: 0.55;
 	filter: blur(20px);
