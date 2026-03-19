@@ -12,7 +12,9 @@ const Hero = () => {
 							className="portrait-image"
 							width="320"
 							height="320"
+							loading="eager"
 							decoding="async"
+							fetchPriority="high"
 						/>
 					</div>
 				</div>
@@ -20,7 +22,7 @@ const Hero = () => {
 					<h1 className="hero-title">
 						{SECTION.HERO.titlePrefix} {PROFILE.shortName} <span aria-hidden="true">👋</span>
 					</h1>
-					<p className="hero-role">{PROFILE.role}</p>
+					<h2 className="hero-role">{PROFILE.role}</h2>
 					<p className="hero-summary">{PROFILE.summary}</p>
 					<ul className="hero-meta" aria-label="Profile highlights">
 						<li>{PROFILE.location} </li>

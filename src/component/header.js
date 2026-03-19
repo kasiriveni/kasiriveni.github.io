@@ -96,17 +96,15 @@ const Header = ({ theme, onThemeToggle }) => {
 					<span className="brand-mark-text">{PROFILE.name}</span>
 				</a>
 				<nav id="site-nav" className={`nav ${isNavOpen ? 'is-open' : ''}`} aria-label="Primary">
-					{NAV_ITEMS.map((item) => (
-						<a
-							key={item.href}
-							href={item.href}
-							target={item.target || '_self'}
-							onClick={handleLinkClick}
-							aria-label={item.label}
-						>
-							{item.label}
-						</a>
-					))}
+					<ul className="nav-list">
+						{NAV_ITEMS.map((item) => (
+							<li key={item.href} className="nav-item">
+								<a href={item.href} target={item.target || '_self'} onClick={handleLinkClick}>
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ul>
 				</nav>
 				<div className="header-actions">
 					<button

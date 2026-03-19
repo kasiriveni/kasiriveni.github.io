@@ -45,10 +45,22 @@
 .nav {
 	display: flex;
 	align-items: center;
-	gap: 1.15rem;
 	margin-left: auto;
 	font-size: 0.92rem;
 	color: var(--muted);
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	gap: 1.15rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-item {
+	margin: 0;
 }
 
 .nav a {

@@ -52,6 +52,8 @@ const Skills = () => {
 														className="skill-logo-img"
 														src={SKILL_LOGOS[skill]}
 														alt={`${skill} logo`}
+														width="18"
+														height="18"
 														loading="lazy"
 													/>
 												)}

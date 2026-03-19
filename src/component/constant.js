@@ -14,6 +14,8 @@ export const PROFILE = {
 	contactLink: 'mailto:srinivas.kasiriveni@gmail.com?subject=Portfolio%20Inquiry',
 };
 
+export const SECTION_IDS = ['hero', 'about', 'skills', 'experience', 'projects', 'contact'];
+
 export const SOCIAL_LINKS = [
 	{
 		label: 'GitHub',
@@ -132,8 +134,16 @@ export const PROJECTS = [
 			'	A personal portfolio website built with React, showcasing my skills, experience, and projects with a focus on clean design and responsive performance.',
 		tech: ['React', 'CSS', 'Responsive UI'],
 		github: 'https://github.com/kasiriveni/kasiriveni.github.io',
-		demo: 'https://kasiriveni.github.io/',
-		theme: 'ocean',
+		demo: 'https://kasiriveni.github.io',
+	},
+	{
+		id: 2,
+		name: 'LinkedIn Certifications',
+		description:
+			'	A collection of LinkedIn certifications showcasing my skills and expertise in various technologies and methodologies.',
+		tech: ['JavaScript', 'React', 'CSS'],
+		github: 'https://github.com/kasiriveni/linkedin-certifications',
+		demo: 'https://inkedin-certifications.netlify.app',
 	},
 ];
 
@@ -222,5 +232,43 @@ export const SECTION = {
 		},
 		menuOpen: 'Open menu',
 		menuClose: 'Close menu',
+	},
+};
+
+export const METADATA = {
+	default: {
+		title: `${PROFILE.name} | ${PROFILE.role}`,
+		description:
+			"Explore Srinivas Kasiriveni's portfolio to learn about his experience building modern, user-focused web applications.",
+	},
+
+	hero: {
+		title: `${PROFILE.name} | ${PROFILE.role}`,
+		description: PROFILE.summary,
+	},
+	about: {
+		title: `About ${PROFILE.name} | ${PROFILE.role}`,
+		description:
+			'A closer look at Srinivas Kasiriveni as a fullstack developer, including background, focus areas, and ways of working.',
+	},
+	skills: {
+		title: `Skills & Tools | ${PROFILE.name}`,
+		description:
+			'Technical skills across JavaScript, React, Node.js, APIs, cloud platforms, testing tools, and modern frontend tooling.',
+	},
+	experience: {
+		title: `Experience | ${PROFILE.name}`,
+		description:
+			'Professional experience delivering UI engineering, frontend development, and fullstack projects across multiple companies and domains.',
+	},
+	projects: {
+		title: `Projects & Case Studies | ${PROFILE.name}`,
+		description:
+			"Selected projects and product concepts that showcase Srinivas Kasiriveni's approach to building responsive, maintainable interfaces.",
+	},
+	contact: {
+		title: `Contact ${PROFILE.name} | ${PROFILE.role}`,
+		description:
+			'Get in touch to discuss portfolio work, frontend feature builds, or UI-focused collaborations.',
 	},
 };
