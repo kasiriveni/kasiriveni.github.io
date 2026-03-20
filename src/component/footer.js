@@ -7,7 +7,7 @@ const Footer = () => {
 		<footer className="site-footer">
 			<div className="container footer-inner">
 				<p className="footer-copy">
-					© {year} ✨ {PROFILE.name} ✨ {SECTION.FOOTER.tagline}
+					© {year} ❤️ {PROFILE.name} - {SECTION.FOOTER.tagline}
 				</p>
 			</div>
 		</footer>

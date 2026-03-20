@@ -1,62 +1,54 @@
-# kasiriveni.github.io
+# kasiriveni.github.io 🚀✨
 
-Personal portfolio website built with Vite and React.
+Personal portfolio website built with React. 🌟
 
-## Tech Stack
+## Tech Stack 🛠️
 
-- React
-- Vite
-- JavaScript (ES6+)
-- CSS
+- React ⚛️
+- Webpack 📦
+- JavaScript (ES6+) 🖥️
+- CSS 🎨
 
-## Getting Started
+## Getting Started 🏁
 
-### Prerequisites
+### Prerequisites ✅
 
-- Node.js (LTS recommended)
-- npm or yarn
+- Node.js (LTS recommended) 📥
+- npm or yarn 📦
 
-### Installation
+### Installation ⚙️
 
 ```bash
 npm install
-# or
-yarn
 ```
 
-### Development
+### Development 🖥️
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Then open the URL shown in the terminal (usually http://localhost:5173).
+Then open the URL shown in the terminal (usually http://localhost:8080). 🌐
 
-### Build
+### Build 🏗️
 
 ```bash
 npm run build
-# or
-yarn build
 ```
 
-### Preview Production Build
+### Preview Production Build 🔍
 
 ```bash
 npm run preview
-# or
-yarn preview
 ```
 
-## Project Structure
+## Project Structure 🗂️
 
 - `src/component/` – React components (about, hero, projects, skills, contact, etc.)
 - `src/css/` – Global styles
-- `src/js/main.jsx` – App entry point
-- `vite.config.js` – Vite configuration
+- `src/js/main.js` – App entry point
+- `webpack.config.js` – Webpack configuration
 
-## Deployment
+## Deployment 🚀
 
-This repo is intended to be deployed via GitHub Pages at `kasiriveni.github.io`. Build the project and push the `dist` output according to your Pages setup.
+This repo is intended to be deployed via GitHub Pages at `kasiriveni.github.io`. Build the project and push the `dist` output according to your Pages setup. 📤
