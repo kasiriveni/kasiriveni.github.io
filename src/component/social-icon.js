@@ -9,11 +9,11 @@ const SocialIcon = ({ icon, className = '' }) => {
 	};
 
 	const iconMap = {
-		facebook: <FaFacebook {...commonProps} />,
-		twitter: <FaTwitter {...commonProps} />,
-		linkedin: <FaLinkedin {...commonProps} />,
-		github: <FaGithub {...commonProps} />,
-		email: <FaEnvelope {...commonProps} />,
+		facebook: <FaFacebook {...commonProps} data-testid="social-icon-facebook" />,
+		twitter: <FaTwitter {...commonProps} data-testid="social-icon-twitter" />,
+		linkedin: <FaLinkedin {...commonProps} data-testid="social-icon-linkedin" />,
+		github: <FaGithub {...commonProps} data-testid="social-icon-github" />,
+		email: <FaEnvelope {...commonProps} data-testid="social-icon-email" />,
 	};
 
 	return iconMap[icon] || null;

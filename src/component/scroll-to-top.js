@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../css/style.css';
 import { SECTION } from './constant';
 
 const SCROLL_THRESHOLD = 300;
