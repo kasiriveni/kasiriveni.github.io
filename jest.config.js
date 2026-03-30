@@ -13,5 +13,3 @@ module.exports = {
 		expect: true,
 	},
 };
-
-console.log('Jest Config Loaded:', JSON.stringify(module.exports, null, 2));

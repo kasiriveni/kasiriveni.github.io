@@ -55,12 +55,20 @@ module.exports = [
 		},
 	},
 	{
-		files: ['webpack.config.js', 'eslint.config.js'],
+		files: ['webpack.config.js', 'eslint.config.js', 'jest.config.js'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'commonjs',
 			globals: {
 				...globals.node,
+			},
+		},
+	},
+	{
+		files: ['src/test/**/*.test.js'],
+		languageOptions: {
+			globals: {
+				...globals.jest,
 			},
 		},
 	},
