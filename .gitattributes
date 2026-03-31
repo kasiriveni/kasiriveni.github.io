@@ -1,0 +1,8 @@
+# Enforce consistent line endings
+* text=auto
+
+# Specific file types
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf

@@ -45,6 +45,7 @@
 		"prettier": "^3.5.3",
 		"regenerator-runtime": "^0.14.1",
 		"style-loader": "^4.0.0",
+		"terser-webpack-plugin": "^5.4.0",
 		"webpack": "^5.105.4",
 		"webpack-cli": "^7.0.0",
 		"webpack-dev-server": "^5.2.3"
